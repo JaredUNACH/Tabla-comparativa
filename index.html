@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Comparativa-Jared Daniel Salazar Sanchez</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="table-container">
+        <h1>Comparación de Linux y MySQL</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspecto</th>
+                    <th class="header-linux">Linux (Sistema Operativo - SO)</th>
+                    <th class="header-mysql">MySQL (Sistema de Gestión de Bases de Datos - DBMS)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tipo de Sistema</td>
+                    <td class="linux">Sistema Operativo, que gestiona los recursos de hardware y software.</td>
+                    <td class="mysql">Sistema de Gestión de Bases de Datos, que organiza y manipula datos.</td>
+                </tr>
+                <tr>
+                    <td>Componentes</td>
+                    <td class="linux">
+                        - Kernel: Núcleo que gestiona hardware y recursos del sistema.<br>
+                        - Controladores (Drivers): Permiten al kernel comunicarse con hardware específico.<br>
+                        - Servicios y Daemons: Procesos que se ejecutan en segundo plano para diversas funciones como redes y administración de usuarios.
+                    </td>
+                    <td class="mysql">
+                        - Motor de Base de Datos: Gestiona la creación, lectura, actualización y eliminación de datos (CRUD).<br>
+                        - Administrador de Transacciones: Asegura la consistencia y atomicidad de las transacciones.<br>
+                        - Sistema de Almacenamiento: Maneja la organización y almacenamiento físico de los datos.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Estructura</td>
+                    <td class="linux">- Arquitectura Monolítica: El kernel incluye la mayoría de las funciones del sistema, permitiendo una integración profunda entre componentes.</td>
+                    <td class="mysql">- Arquitectura Cliente-Servidor: Los clientes realizan solicitudes que el servidor de bases de datos maneja y procesa.</td>
+                </tr>
+                <tr>
+                    <td>Procesos Clave</td>
+                    <td class="linux">
+                        - Gestión de Recursos: El kernel asigna y administra recursos de hardware (CPU, memoria, I/O).<br>
+                        - Planificación de Tareas: Administra la ejecución de procesos y threads utilizando algoritmos de planificación para maximizar el rendimiento.
+                    </td>
+                    <td class="mysql">
+                        - Gestión de Transacciones: Asegura la integridad de los datos mediante el manejo de transacciones según el modelo ACID.<br>
+                        - Consultas SQL: Interpreta y ejecuta consultas para manipular y acceder a los datos.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Relaciones Internas</td>
+                    <td class="linux">- Kernel y Servicios: Interacción directa donde el kernel gestiona los servicios y daemons para mantener el sistema operativo en funcionamiento.</td>
+                    <td class="mysql">- Relación Cliente-Servidor: Interacción entre las aplicaciones clientes y el servidor de bases de datos, donde las solicitudes de datos son procesadas y gestionadas.</td>
+                </tr>
+                <tr>
+                    <td>Evolución de Procesos</td>
+                    <td class="linux">- Actualizaciones del Kernel y Servicios: Las actualizaciones de Linux suelen introducir nuevas funcionalidades, mejoras de seguridad y optimizaciones de rendimiento que afectan a todos los procesos gestionados por el kernel.</td>
+                    <td class="mysql">- Nuevas Versiones del Motor de Base de Datos y Optimización SQL: Las actualizaciones de MySQL introducen mejoras en el rendimiento de consultas, nuevas funcionalidades y optimizaciones en la gestión de transacciones y almacenamiento.</td>
+                </tr>
+                <tr>
+                    <td>Escalabilidad</td>
+                    <td class="linux">- Altamente Escalable: Linux puede ser ajustado para funcionar en una variedad de dispositivos, desde sistemas embebidos hasta supercomputadoras.</td>
+                    <td class="mysql">- Escalabilidad Horizontal y Vertical: MySQL permite replicación y clustering para manejar grandes volúmenes de datos y alta concurrencia.</td>
+                </tr>
+                <tr>
+                    <td>Seguridad</td>
+                    <td class="linux">- Mecanismos de Seguridad: Linux ofrece control de acceso a nivel de usuario y grupo, y mecanismos avanzados como SELinux para proteger el sistema.</td>
+                    <td class="mysql">- Seguridad de Datos: MySQL implementa control de acceso basado en usuarios, cifrado de datos en tránsito y en reposo, y autenticación robusta.</td>
+                </tr>
+                <tr>
+                    <td>Interfaz de Usuario</td>
+                    <td class="linux">
+                        - Interfaz de Línea de Comandos (CLI): Ofrece flexibilidad y control avanzado a través de comandos como bash.<br>
+                        - Interfaz Gráfica (GUI): Disponible a través de entornos de escritorio como GNOME o KDE.
+                    </td>
+                    <td class="mysql">
+                        - Interfaz de Línea de Comandos (CLI): Permite la ejecución directa de consultas SQL y administración del sistema.<br>
+                        - Interfaz Gráfica (GUI): Herramientas como phpMyAdmin y MySQL Workbench facilitan la administración visual de bases de datos.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rendimiento</td>
+                    <td class="linux">- Optimización del Rendimiento: A través de la gestión eficiente de recursos, planificación avanzada de procesos y soporte para múltiples núcleos de CPU.</td>
+                    <td class="mysql">- Optimización de Consultas: MySQL utiliza técnicas como el uso de índices, caché de consultas y optimización de subconsultas para mejorar la velocidad de las operaciones.</td>
+                </tr>
+                <tr>
+                    <td>Soporte y Comunidad</td>
+                    <td class="linux">- Comunidad Amplia y Activa: Linux cuenta con una gran comunidad de desarrolladores y usuarios que contribuyen a su desarrollo y soporte.</td>
+                    <td class="mysql">- Amplia Base de Usuarios: MySQL es respaldado por una comunidad activa, además de ser parte del ecosistema de Oracle, que ofrece soporte comercial.</td>
+                </tr>
+                <tr>
+                    <td>Personalización</td>
+                    <td class="linux">- Altamente Personalizable: Linux permite modificar prácticamente cualquier aspecto del sistema operativo, desde el kernel hasta el entorno de usuario.</td>
+                    <td class="mysql">- Configurabilidad: MySQL permite ajustar parámetros de rendimiento, seguridad y almacenamiento para adaptarse a diferentes necesidades.</td>
+                </tr>
+                <tr>
+                    <td>Soporte para Multiplataforma</td>
+                    <td class="linux">- Multiplataforma: Linux puede ejecutarse en múltiples arquitecturas de hardware, desde x86 hasta ARM y otros procesadores.</td>
+                    <td class="mysql">- Compatibilidad Multiplataforma: MySQL puede ser desplegado en diversas plataformas, incluyendo Linux, Windows y macOS.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
